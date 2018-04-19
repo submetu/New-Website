@@ -12,7 +12,9 @@ router.post('/github', function(req, res, next) {
         deploy();
         res.send('200');
     }
-
+    else{
+        res.send(500);
+    }
 
 });
 
