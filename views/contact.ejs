@@ -17,30 +17,34 @@
 -->
 <html lang="en">
 
-    <% include head %>
+<% include head %>
 
 
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <% include header %>
-       
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width portfolio-contact">
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Contact</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/wear.png" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__supporting-text"style="padding-bottom: 300px;">
-                        <p>
-                            You can contact me via email, linkedin and skype
-                        </p>
-                        <p>
-                            Here's my CV: <a target="_blank" href="/cv.pdf"><img src="/images/pdf_logo.png" width="50" height="50"></a>
-                        </p>
-                        <!-- <form action="#" class="">
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <% include header %>
+
+                <main class="mdl-layout__content">
+                    <div class="mdl-grid portfolio-max-width portfolio-contact">
+                        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Contact</h2>
+                            </div>
+                            <div class="mdl-card__media">
+                                <img class="article-image" src=" images/wear.png" border="0" alt="">
+                            </div>
+                            <div class="mdl-card__supporting-text" style="padding-bottom: 300px;">
+                                <p>
+                                    *You can contact me via email, linkedin and skype
+                                </p>
+                                <div class="container">
+                                    <p>
+                                        Resume:
+                                        <a target="_blank" href="/cv.pdf">
+                                            <img style="margin-left:30px;" src="/images/pdf_logo.png" width="50" height="50">
+                                        </a>
+                                    </p>
+                                    <!-- <form action="#" class="">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
                                 <label class="mdl-textfield__label" for="Name">Name...</label>
@@ -59,24 +63,23 @@
                                     Submit
                                 </button>
                             </p>
-                        </form> -->
-                        <p>Email:
-                            <a href="mailto:hire@subhannaeem.com">hire@subhannaeem.com</a>
-                        </p>
-                        <p>LinkedIn: 
-                            <a href="https://www.linkedin.com/in/subhannaeem/">Subhan Naeem</a>
-                        </p>
-                        <p>Skype:
-                            <a href="skype:m.subhan.naeem?chat">m.subhan.naeem</a>
-                        </p>
-                       
+                        </form> --><p style="display:inline-block;margin-right: 40px;">Email:</p>
+                                    <a class="email_icon-container" style="display:inline-block" href="mailto:hire@subhannaeem.com">  
+                                        <div class="email_icon"> </div> </a>
+                                    <p>LinkedIn:
+                                        <a target="_blank" href="https://www.linkedin.com/in/subhannaeem/"><img style="margin-left: 25px;width: 50px;" src="/images/linkedin_logo.png"></a>
+                                    </p>
+                                    <p>Skype:
+                                        <a href="skype:m.subhan.naeem?chat"><img style="margin-left: 40px;width: 50px;" src="/images/skype_logo.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <% include footer %> 
-        </main>
-    </div>
-    <% include scripts %>  
-</body>
+                    <% include footer %>
+                </main>
+        </div>
+        <% include scripts %>
+    </body>
 
 </html>

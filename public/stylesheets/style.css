@@ -297,6 +297,58 @@ footer {
 .hover-zoom:hover{
   transform: scale(1.04);
 }
+.email_icon {
+  margin-top: 10px;
+  width: 0px;
+  height: 20px;
+  border-top: 20px solid white;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  background-color: orange;
+  transition: .3s;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+}
+.email_icon:hover {
+  background-color: orange;
+}
+.email_icon:before {
+  padding: 0;
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: -23px;
+  border-top: 19px solid orange;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  transition: .1s;
+}
+.email_icon:hover:before {
+  position: absolute;
+  top: -41px;
+  left: -24px;
+  border-bottom: 20px solid orange;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-top: 0px;
+  transition: .1s;
+}
+.email_icon-container{
+  display: inline-block;
+  position: relative;
+  top: 14px;
+  margin-top: 40px !important;
+}
+.container{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container > * {
+  margin-top:60px
+}
 
 
 @media screen and (max-width: 876px){
