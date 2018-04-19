@@ -6,12 +6,16 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 router.get('/blog', function(req, res, next) {
-  res.render('blog', { title: 'Express' });
+  res.render('blog');
 });
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'Express' });
+  res.render('about');
 });
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Express' });
+  res.render('contact');
 });
+router.get('/itnext', function(req, res, next) {
+  res.render('itnext');
+});
+
 module.exports = router;

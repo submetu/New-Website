@@ -4,7 +4,7 @@ body {
 a{
   color: #0070c9;
 }
-.mdl-card__supporting-text{
+.main-page .mdl-card__supporting-text{
   min-height: 122px;
 }
 .portfolio-header {
@@ -287,6 +287,17 @@ footer {
 .social-media > *:hover{
   transform: scale(1.1);
 }
+.shadow{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.hover-zoom{
+  transition: all 200ms ease-in-out;
+  transform: scale(1);
+}
+.hover-zoom:hover{
+  transform: scale(1.04);
+}
+
 @media screen and (max-width: 876px){
   .mdl-layout__title{
     font-size: 7.5vw;
