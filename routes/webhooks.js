@@ -6,13 +6,11 @@ var childProcess = require('child_process');;
 router.post('/github', function(req, res, next) {
     var commits = req.body.commits; 
     var sender = req.body.sender;
+    var branch = req.body.ref;
 
-    if(commits.length > 0 && sender.login === 'submetu'){
+    if(branch === 'refs/heads/master' && commits.length > 0 && sender.login === 'submetu'){
         deploy();
         res.send('200');
-
-        
-        console.log(req.body);
     }
 
 
