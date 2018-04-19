@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var childProcess = require('child_process');;
 
 /* GET users listing. */
 router.post('/github', function(req, res, next) {
@@ -14,7 +15,7 @@ router.post('/github', function(req, res, next) {
 });
 
 function deploy(){
-    var child = spawn('./deploy.sh', {
+    var child = childProcess.spawn('./deploy.sh', {
         stdio: 'inherit',
         shell: true,
         cwd: '/home'
