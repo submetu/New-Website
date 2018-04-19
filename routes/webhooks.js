@@ -11,6 +11,7 @@ router.post('/github', function(req, res, next) {
     if(branch === 'refs/heads/master' && commits.length > 0 && sender.login === 'submetu'){
         deploy();
         res.send('200');
+        
     }
 
 
