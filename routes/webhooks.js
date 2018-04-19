@@ -19,6 +19,7 @@ function deploy(){
         shell: true,
         cwd: '/home'
       });
+      child.unref();
 }
 
 module.exports = router;
