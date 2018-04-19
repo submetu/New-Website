@@ -13,6 +13,7 @@ router.get('/about', function(req, res, next) {
 });
 router.get('/contact', function(req, res, next) {
   res.render('contact');
+  
 });
 router.get('/itnext', function(req, res, next) {
   res.render('itnext');
