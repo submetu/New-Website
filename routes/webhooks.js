@@ -7,10 +7,17 @@ router.post('/github', function(req, res, next) {
     var sender = req.body.sender;
 
     if(commits.length > 0 && sender.login === 'submetu'){
-        console.log('RESTART SERVER!!!');
+        deploy();
     }
-    console.log(commits, sender);
-    
+
 });
+
+function deploy(){
+    var child = spawn('./deploy.sh', {
+        stdio: 'inherit',
+        shell: true,
+        cwd: '/home'
+      });
+}
 
 module.exports = router;
