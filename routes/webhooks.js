@@ -8,9 +8,7 @@ router.post('/github', function(req, res, next) {
     var sender = req.body.sender;
     var branch = req.body.ref;
 
-    console.log(branch);
-    
-    if(branch === 'refs/heads/master' && commits.length > 0 && sender.login === 'submetu'){
+    if(branch.indexOf('master') > -1 && commits.length > 0 && sender.login === 'submetu'){
         deploy();
         res.send('200');
     }
