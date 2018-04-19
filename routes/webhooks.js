@@ -9,6 +9,7 @@ router.post('/github', function(req, res, next) {
 
     if(commits.length > 0 && sender.login === 'submetu'){
         deploy();
+        res.send('200');
     }
 
 
