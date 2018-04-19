@@ -297,6 +297,9 @@ footer {
 .hover-zoom:hover{
   transform: scale(1.04);
 }
+.is-small-screen .portfolio-logo-row{
+  min-height: 110px;
+}
 
 @media screen and (max-width: 876px){
   .mdl-layout__title{
