@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+    <% include head %>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <% include header %>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Frontend Developer at &nbsp;<a target="_blank" href="http://itnext.io">Spinmatic Entertainment</a></h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img class="article-image" src="images/spinmatic_new.png" border="0" alt="Contributing writer for ITNEXT">
+                    </div>
+                    <div class="mdl-grid portfolio-copy">
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">What I do here? </h3>
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
+                            <p>
+                                My first project for the company was to work on the frontend of the admin panel for the company. The project
+                                was using Angular.Js. I being the only frontend developer (in the beginning), was responsible for extending the 
+                                features in the panel. This included from small features like making menus sticky on scroll, adding infinite scrolling,
+                                adding lazy loading to images to big features such as creating full-fledged modules that are a product on their own. 
+                                The backoffice project was created to allow customers, administrators and casino owners to manage all their websites, the content in it, 
+                                the casino arcade terminal and clients who use our remote API. The scale of the project was massive and is still under heavy development. 
+                                Due to the scale and the requirements we are currently porting the whole application to Angular 6. 
+                            </p>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <img class="article-image hover-zoom shadow" src="/images/backoffice.png" border="0" alt="">
+                        </div>
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline"></h3>
+                        <div class="mdl-cell mdl-cell--6-col">
+                                <img class="article-image hover-zoom shadow" src="/images/yellowportal.png" border="0" alt="automate deployment with webhooks">
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                            <p>A few months into my job, our customers started requesting us to create custom casino websites that can be 
+                                managed from our backoffice admin panel. These websites had very unique design requirements specific to the 
+                                online gambling industry. The aim of these small projects were to create responsive, fast and secure pages. For this purpose,
+                                we decided to use Angular 5 for these projects as these projects required maintainence and scalability options. Using techniques such as
+                                lazy loading modules, split bundling, image sprites and server side rendering we were able to create quality casion web applications.</p>
+                        </div>
+                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline"></h3>
+                        <div class="mdl-cell mdl-cell--6-col">
+                                <img class="article-image hover-zoom shadow" src="/images/redspin.png" border="0" alt="angular code design for responsive websites">
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <a target="_blank" href="https://itnext.io/angular-create-your-own-modal-boxes-20bb663084a1">
+                                <img class="article-image hover-zoom shadow" src="/images/redspin2.png" border="0" alt="create your own modal boxes">
+                            </a>
+                        </div>
+                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                            <p>
+                                For the better part of the past month, I have started another project in the company. Its a CMS (Content management system),
+                                that will aid our customers and us in creating dynamic websites themselves. So people who don't know anything about website
+                                building will be able to to create their own custom websites. The end goal of this project is to create a universal applciation that can 
+                                be used outside of the online gambling sector. However, since the project is young, I am keeping it simple and I am targetting casino websites
+                                only. The scale of this project is even bigger than the backoffice admin panel. Therefore, I am managing a small team of 4 developers to create
+                                this project. We are using technologies like React, Redux, Redux Saga, Immutable JS, Reselect, Webpack, SASS and Docker to accomplish this. We are 
+                                paying very close attention to our codebase, tests and commits to keep our builds as healthy as possible all the time. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% include footer %> 
+        </main>
+    </div>
+    <% include scripts %> 
+</body>
+
+</html>

@@ -18,5 +18,8 @@ router.get('/contact', function(req, res, next) {
 router.get('/itnext', function(req, res, next) {
   res.render('itnext');
 });
+router.get('/spinmatic', function(req, res, next) {
+  res.render('spinmatic');
+});
 
 module.exports = router;
