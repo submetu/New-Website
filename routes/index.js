@@ -21,5 +21,8 @@ router.get('/itnext', function(req, res, next) {
 router.get('/spinmatic', function(req, res, next) {
   res.render('spinmatic');
 });
+router.get('/proteams', function(req, res, next) {
+  res.render('proteams');
+});
 
 module.exports = router;
